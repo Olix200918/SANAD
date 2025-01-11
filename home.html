@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanad - Dashboard</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <nav class="top-nav">
+        <div class="user-info">
+          <i class="fas fa-user-shield"></i>
+          <span id="username"></span>
+        </div>
+        <div class="nav-buttons">
+          <button onclick="toggleTheme()" class="theme-btn">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button onclick="logout()" class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
+      </nav>
+
+      <div class="options-grid">
+        <button class="close-menu-btn hidden">
+          <i class="fas fa-times"></i>
+          Close Menu
+        </button>
+
+        <!-- Link Detection Tools -->
+        <div class="option-card category-main" data-category="links">
+          <i class="fas fa-link"></i>
+          <h3>Link Detection Tools</h3>
+        </div>
+        <div class="option-card sub-option links-option hidden">
+          <i class="fas fa-link"></i>
+          <h3>Sus Links Detector</h3>
+        </div>
+        <div class="option-card sub-option links-option hidden">
+          <i class="fas fa-university"></i>
+          <h3>Bank Link Detector</h3>
+        </div>
+
+        <!-- File Tools -->
+        <div class="option-card category-main" data-category="files">
+          <i class="fas fa-file"></i>
+          <h3>File Tools</h3>
+        </div>
+        <div class="option-card sub-option files-option hidden">
+          <i class="fas fa-file"></i>
+          <h3>File Detector</h3>
+        </div>
+
+        <!-- Number Verification -->
+        <div class="option-card category-main" data-category="numbers">
+          <i class="fas fa-phone"></i>
+          <h3>Number Verification</h3>
+        </div>
+        <div class="option-card sub-option numbers-option hidden">
+          <i class="fas fa-phone"></i>
+          <h3>Official Numbers Checker</h3>
+        </div>
+        <div class="option-card sub-option numbers-option hidden">
+          <i class="fas fa-exclamation-triangle"></i>
+          <h3>Numbers Scam Report</h3>
+        </div>
+
+        <!-- Security Guides -->
+        <div class="option-card category-main" data-category="guides">
+          <i class="fas fa-book"></i>
+          <h3>Security Guides</h3>
+        </div>
+        <div class="option-card sub-option guides-option hidden">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Virus Guide</h3>
+        </div>
+        <div class="option-card sub-option guides-option hidden">
+          <i class="fas fa-lock"></i>
+          <h3>Hacked Account Guide</h3>
+        </div>
+        <div class="option-card sub-option guides-option hidden">
+          <i class="fas fa-money-bill"></i>
+          <h3>Bank Security Guide</h3>
+        </div>
+
+        <!-- Other Tools -->
+        <div class="option-card category-main" data-category="others">
+          <i class="fas fa-tools"></i>
+          <h3>Other Tools</h3>
+        </div>
+        <div class="option-card sub-option others-option hidden">
+          <i class="fas fa-handshake"></i>
+          <h3>منو داق Partnership</h3>
+        </div>
+        <div class="option-card sub-option others-option hidden">
+          <i class="fas fa-user-secret"></i>
+          <h3>Dark Web Checker</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>
